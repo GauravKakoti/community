@@ -42,6 +42,9 @@ Again, the emphasis is on critical bug fixes, e.g.,
 - Panic, crash, hang
 - Security
 
+A bugfix for a functional issue (not a data loss or security issue) that only
+affects an alpha feature does not qualify as a critical bug fix.
+
 If you are proposing a cherry pick and it is not a clear and obvious critical
 bug fix, please reconsider. If upon reflection you wish to continue, bolster
 your case by supplementing your PR with e.g.,
@@ -89,7 +92,7 @@ patch release branches.
 
   - You will need to run the cherry pick script separately for each patch
     release you want to cherry pick to. Cherry picks should be applied to all
-    [active](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md#detailed-release-history-for-active-branches)
+    [active](https://github.com/kubernetes/website/blob/main/content/en/releases/patch-releases.md#detailed-release-history-for-active-branches)
     release branches where the fix is applicable.
 
   - If `GITHUB_TOKEN` is not set you will be asked for your github password:
